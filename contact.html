@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-us">
+        <h1>Contact Us</h1>
+        <form action="mailto:your-email@example.com" method="POST" enctype="multipart/form-data">
+            <input type="email" name="email" placeholder="Your Email" required>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="social-media">
+            <a>Facebook</a>
+            <a>Twitter</a> 
+            <a>Instagram</a>
+        </div>
+        <button onclick='bookNow()'>Book Now</button>
+
+        <!--modal-->
+        <div id="bookingModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Booking Information</h2>
+                <form id="bookingForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+        
+                    
+        
+                
+        
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

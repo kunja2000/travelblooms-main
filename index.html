@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom - Discover Your Next Adventure</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to Malasia</h1>
+        <p>Find your new destination, experience malasian cultures, and create unforgettable memories.</p>
+        <input type="text" id="search-bar" placeholder="Enter your favourite destination">
+        <button onclick="searchDestinations()">Search</button>
+        
+        <button onclick="bookNow()">Book Now</button>
+<!--  modal-->
+<div id="bookingModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Booking Information</h2>
+        <form id="bookingForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            
+
+            
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div id="suggestions" class="suggestions"></div>
+    </section>
+
+    
+
+
+        <!----->
+
+
+        <div class="destination" id="beach-recommendation" style="display:none;">
+            <h3>Beach Destinations</h3>
+            <div class="images">
+                <img src="assets/malabeach1.jpg" alt="Cenang Beach">
+                <h2>Cenang Beach, Malasia</h2>
+                <p>Cenang Beach, on Langkawi Island, Malaysia, is a vibrant and popular destination known for its soft white sand, clear waters, and lively atmosphere. It's a hub for both relaxation and adventure, offering a range of activities like swimming, sunbathing, and exciting water sports such as jet-skiing and parasailing. The beach is lined with coconut trees, beach bars, and restaurants, and is also conveniently located near duty-free shops and other attractions. During the day, it's a great spot for swimming and watersports, while at night, it transforms into a lively social scene with beach bars and live music. </p>
+                <img src="assets/malabeach3.jpg" alt="Tengah Beach">
+                <h2>Tengah Beach, malesia</h2>
+                <p>Pantai Tengah Beach in Langkawi, Malaysia, is a beautiful stretch of sand known for its calm and clear waters, ideal for swimming and water sports. It's a more relaxed alternative to the busier Pantai Cenang, offering a tranquil and romantic atmosphere with opportunities for sunbathing, enjoying sunsets, and exploring nearby restaurants and shops. </p>
+            </div>
+        </div>
+
+        <div class="destination" id="temple-recommendation" style="display:none;">
+            <h3>Temple Destinations</h3>
+            <div class="images">
+                <img src="assets/malatemple1.jpg" alt="Batu cave Temple">
+                <h2>Batu caves temple, Kuala-lumpur</h2>
+                <p>It is a hill that has series of caves and cave temples. It has an enormous cave temple which has immense religious significance. It actually is a great place for those who have a fondness for caves and temples and geography and yes, little bits of history. It is full of monkeys and the best part is its location and must climb 330 stairs to get to the top of it. It is a Hindu temple but visited by most of the tourists.</p>
+                <img src="assets/kek-lok-si-temple-penang.jpg" alt="kek-lok-si-temple">
+                <h2>Kek-lok-si temple, Penang</h2>
+            <p>The Kek Lok Si Temple is a Buddhist temple in George Town in the Malaysian state of Penang. Located at Ayer Itam, it is the largest Buddhist temple in Malaysia and an important pilgrimage centre for Buddhists from Hong Kong, the Philippines, Singapore and other parts of Southeast Asia.</p>
+            </div>
+        </div>
+
+        <div class="destination" id="country-recommendation" style="display:none;">
+            <h3>Country-based Recommendations</h3>
+            <div class="images">
+                <img src="assets/singapore.jpg" alt="Singapore">
+                <h2>Singapore</h2>
+                <p> Singapore is a vibrant island city-state in Southeast Asia, known for its thriving economy, diverse culture, and modern infrastructure. It's a global hub for finance, trade, and transportation, with a unique blend of Western and Asian influences. </p>
+                <img src="assets/thailand.jpg" alt="Thailand">
+                <h2>Thailand</h2>
+                <p>Thailand, officially the Kingdom of Thailand, is a Southeast Asian nation known for its vibrant culture, stunning beaches, and ancient temples. It's a constitutional monarchy with a rich history, and while it has experienced political instability, it's a major player in the region, particularly within ASEAN. Thailand is also a popular tourist destination, drawing visitors with its delicious cuisine, natural beauty, and welcoming atmosphere. </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-media">
+            <a>Facebook</a>
+            <a>Twitter</a> 
+            <a>Instagram</a>
+        </div>
+        
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
